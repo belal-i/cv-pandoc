@@ -4,6 +4,7 @@ title: Software Engineer
 location: Test City
 phone: +1 987 654 3210
 email: your@email.com
+web: yourwebsite.com
 ---
 
 # Resumé
