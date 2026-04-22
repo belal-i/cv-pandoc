@@ -1,0 +1,56 @@
+\documentclass[10pt]{article}
+
+% ---------- PAGE ----------
+\usepackage[a4paper,margin=1.8cm]{geometry}
+\usepackage{fontspec}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{enumitem}
+\usepackage{titlesec}
+
+\setmainfont{Inter}
+
+% ---------- COLORS ----------
+\definecolor{accent}{HTML}{1F4E79}
+\definecolor{text}{HTML}{222222}
+
+\color{text}
+
+% ---------- BASICS ----------
+\setlength{\parindent}{0pt}
+\setlist[itemize]{noitemsep, topsep=2pt}
+\pagenumbering{gobble}
+
+\providecommand{\tightlist}{}
+
+% ---------- LINKS ----------
+\hypersetup{
+  colorlinks=true,
+  urlcolor=accent
+}
+
+% ---------- SECTION STYLE ----------
+\titleformat{\section}
+  {\large\bfseries\color{accent}}
+  {}
+  {0pt}
+  {}[\vspace{2pt}\hrule\vspace{6pt}]
+
+\begin{document}
+
+% ================= HEADER =================
+{\LARGE \textbf{$name$}}
+
+\vspace{2pt}
+$title$
+
+\vspace{6pt}
+
+$location$ \quad | \quad $phone$ \quad | \quad $email$
+
+\vspace{10pt}
+
+% ================= BODY =================
+$body$
+
+\end{document}
