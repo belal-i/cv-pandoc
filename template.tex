@@ -1,7 +1,7 @@
 \documentclass[10pt]{article}
 
 % ---------- PAGE ----------
-\usepackage[a4paper,margin=1.8cm]{geometry}
+\usepackage[a4paper,margin=1.4cm]{geometry}
 \usepackage{fontspec}
 \usepackage{xcolor}
 \usepackage{hyperref}
@@ -18,7 +18,11 @@
 
 % ---------- BASICS ----------
 \setlength{\parindent}{0pt}
-\setlist[itemize]{noitemsep, topsep=2pt}
+\setlist[itemize]{
+  leftmargin=1.2em,
+  itemsep=2pt,
+  topsep=3pt
+}
 \pagenumbering{gobble}
 
 \providecommand{\tightlist}{}
@@ -31,18 +35,24 @@
 
 % ---------- SECTION STYLE ----------
 \titleformat{\section}
-  {\large\bfseries\color{accent}}
+  {\normalsize\bfseries\color{accent}}
   {}
   {0pt}
-  {}[\vspace{2pt}\hrule\vspace{6pt}]
+  {}[\vspace{1pt}\hrule\vspace{2pt}]
+
+\titlespacing*{\section}
+  {0pt}
+  {10pt}
+  {5pt}
 
 \begin{document}
 
 % ================= HEADER =================
-{\LARGE \textbf{$name$}}
+{\Huge \textbf{$name$}}
 
-\vspace{2pt}
-$title$ \quad | \quad $dateofbirth$
+\vspace{4pt}
+
+{\large $title$ \quad | \quad $dateofbirth$}
 
 \vspace{6pt}
 
