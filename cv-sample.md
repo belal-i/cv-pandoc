@@ -1,6 +1,7 @@
 ---
 name: Your Name
 title: Software Engineer
+dateofbirth: Jan 1st 1970
 location: Test City
 phone: +1 987 654 3210
 email: your@email.com
