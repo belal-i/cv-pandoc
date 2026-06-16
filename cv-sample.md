@@ -5,7 +5,7 @@ dateofbirth: Jan 1st 1970
 location: Test City
 phone: +1 987 654 3210
 email: your@email.com
-web: yourwebsite.com
+web: <https://yourwebsite.com>
 ---
 
 # Resumé
